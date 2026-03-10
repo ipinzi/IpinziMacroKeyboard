@@ -46,10 +46,11 @@ Current Supported actions (more can be added in future):
 
 ## 🔴 IMPORTANT --- Add Your Keyboard to MultiKB
 
-Your macro keyboard **must be registered inside Multi-Keyboard for
-AutoHotkey**.
+When you run the app it will open two programs in your taskbar. One of those programs (MultiKB) routes the key presses and the other runs the macro app.
 
-Otherwise the script cannot detect it.
+Your macro keyboard **must be registered inside MultiKB**.
+
+Otherwise the app cannot detect it.
 
 ### Steps
 
