@@ -75,6 +75,8 @@ Default port:
 
 ------------------------------------------------------------------------
 
+# Usage
+
 # 🧩 Binding Format
 
     layer|keyboard_key=action|value
@@ -86,16 +88,6 @@ Example:
 but most of the time you should use the full file path
 
     default|2_112=run|C:\Program Files (x86)\Adobe\Photoshop\Photoshop.exe
-
-Meaning:
-
-  Part          Meaning
-  ------------- -----------------
-  default       layer
-  2             keyboard number
-  112           key code
-  run           action
-  notepad.exe   value
 
 ------------------------------------------------------------------------
 
