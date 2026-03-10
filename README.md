@@ -57,10 +57,15 @@ Otherwise the app cannot detect it.
 ### Steps
 
 1.  Run app
-2.  Open the MultiKB interface by clicking the D icon in the taskbar.
+2.  Open the MultiKB interface by double clicking the D icon in the taskbar.
+
+![Open MuiltiKB](click_d_taskbar.png)
+
 3.  Add the keyboards you intend to use for macros (not your main keyboard)
 4.  If your keyboard does not show in the list unplug it and plug it back in
 5.  Assign a keyboard number
+
+![Open MuiltiKB](assign_keyboard.png)
 
 Your keyboard should now be active and show a tooltip when any unboud keys are pressed. You can use one of these key numbers to create a capture key in the bindings.ini so you can use
 the binding wizard to create your bindings. Alternatively you can just manually edit the bindings.ini and add each key binding manually.
