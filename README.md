@@ -16,7 +16,7 @@ It supports:
 -   🧙 Interactive macro wizard
 -   📋 Clipboard binding generator
 
-You can download the latest release here [https://github.com/ipinzi/IpinziMacroKeyboard/releases]
+You can download the latest release here https://github.com/ipinzi/IpinziMacroKeyboard/releases
 
 ------------------------------------------------------------------------
 
