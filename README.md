@@ -59,7 +59,7 @@ Otherwise the script cannot detect it.
 4.  If your keyboard does not show in the list unplug it and plug it back in
 5.  Assign a keyboard number
 
-# 🎬 OBS Setup (Optional)
+## 🎬 OBS Setup (Optional)
 
 Enable WebSocket:
 
@@ -77,7 +77,7 @@ Default port:
 
 # Usage
 
-# 🧩 Binding Format
+## 🧩 Binding Format
 
     layer|keyboard_key=action|value
 
@@ -91,7 +91,7 @@ but most of the time you should use the full file path
 
 ------------------------------------------------------------------------
 
-# 🎮 Supported Actions
+## 🎮 Supported Actions
 
 ## Run Program
 
