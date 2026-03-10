@@ -59,6 +59,9 @@ Otherwise the script cannot detect it.
 4.  If your keyboard does not show in the list unplug it and plug it back in
 5.  Assign a keyboard number
 
+Your keyboard should now be active and show a tooltip when any unboud keys are pressed. You can use one of these key numbers to create a capture key in the bindings.ini so you can use
+the binding wizard to create your bindings. Alternatively you can just manually edit the bindings.ini and add each key binding manually.
+
 ## 🎬 OBS Setup (Optional)
 
 Enable WebSocket:
