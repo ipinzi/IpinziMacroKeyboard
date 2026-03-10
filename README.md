@@ -96,10 +96,6 @@ Example:
 
     default|2_112=run|notepad.exe
 
-but most of the time you should use the full file path
-
-    default|2_112=run|C:\Program Files (x86)\Adobe\Photoshop\Photoshop.exe
-
 ------------------------------------------------------------------------
 
 ## 🎮 Supported Actions
@@ -111,6 +107,10 @@ but most of the time you should use the full file path
 Example:
 
     default|2_112=run|notepad.exe
+
+but most of the time you should use the full file path:
+
+    default|2_112=run|C:\Program Files (x86)\Adobe\Photoshop\Photoshop.exe
 
 ------------------------------------------------------------------------
 
