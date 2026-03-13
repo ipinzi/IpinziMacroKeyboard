@@ -114,19 +114,35 @@ RunBindingWizard(bindingKey, keyName) {
                 return { Success: false }
             params.Push(Trim(d.Value))
 
-        case "6": 
+        case "6":
             actionType := "folder"
-            d := InputBox("Enter folder path.", "Folder Action", "w500 h180")
+            d := InputBox(
+                "Enter one or more folder paths.`n`n"
+            . "Separate multiple targets with |`n"
+            . "Escape a literal pipe as \|`n`n"
+            . "Example:`n"
+            . "C:\Projects|D:\Art|C:\Users\Ben\Documents",
+                "Folder Action",
+                "w620 h240"
+            )
             if (d.Result != "OK")
                 return { Success: false }
-            params.Push(d.Value)
+            params := SplitEscaped(d.Value, "|")
 
-        case "7": 
+        case "7":
             actionType := "website"
-            d := InputBox("Enter website URL.", "Website Action", "w500 h180")
+            d := InputBox(
+                "Enter one or more website URLs.`n`n"
+            . "Separate multiple targets with |`n"
+            . "Escape a literal pipe as \|`n`n"
+            . "Example:`n"
+            . "https://google.com|https://youtube.com",
+                "Website Action",
+                "w620 h240"
+            )
             if (d.Result != "OK")
                 return { Success: false }
-            params.Push(d.Value)
+            params := SplitEscaped(d.Value, "|")
 
         case "8": 
             actionType := "editbindings"

@@ -41,14 +41,14 @@ ExecuteBinding(binding, keyboardNumber, vk) {
             HandleMediaAction(params.Length ? params[1] : "")
 
         case "folder":
-            try Run (params.Length ? params[1] : "")
+            try RunMultipleTargets(params, "folder")
             catch Error as err
-                MsgBox "Failed to open folder:`n" (params.Length ? params[1] : "") "`n`n" err.Message
+                MsgBox "Failed to open folder target.`n`n" err.Message
 
         case "website":
-            try Run (params.Length ? params[1] : "")
+            try RunMultipleTargets(params, "website")
             catch Error as err
-                MsgBox "Failed to open website:`n" (params.Length ? params[1] : "") "`n`n" err.Message
+                MsgBox "Failed to open website target.`n`n" err.Message
 
         case "editbindings":
             try Run 'notepad.exe "' ConfigFile '"'
