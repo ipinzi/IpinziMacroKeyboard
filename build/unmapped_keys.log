@@ -1,0 +1,57 @@
+﻿2026-03-10 15:29:58 | CaptureMode | Layer=default | Keyboard=1 | VK=52 | Key=4 | AddedBinding=default|1_52=run| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:31:44 | CaptureMode | Layer=default | Keyboard=1 | VK=75 | Key=k | AddedBinding=default|1_75=run|chrome.exe | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:10 | Layer=default | Keyboard=1 | VK=67 | Key=c | SuggestedBinding=default|1_67=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:37 | Layer=default | Keyboard=1 | VK=67 | Key=c | SuggestedBinding=default|1_67=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:38 | Layer=default | Keyboard=1 | VK=67 | Key=c | SuggestedBinding=default|1_67=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:39 | Layer=default | Keyboard=1 | VK=74 | Key=j | SuggestedBinding=default|1_74=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:39 | Layer=default | Keyboard=1 | VK=67 | Key=c | SuggestedBinding=default|1_67=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:40 | Layer=default | Keyboard=1 | VK=73 | Key=i | SuggestedBinding=default|1_73=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:41 | Layer=default | Keyboard=1 | VK=67 | Key=c | SuggestedBinding=default|1_67=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:41 | Layer=default | Keyboard=1 | VK=74 | Key=j | SuggestedBinding=default|1_74=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:42 | Layer=default | Keyboard=1 | VK=67 | Key=c | SuggestedBinding=default|1_67=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:43 | Layer=default | Keyboard=1 | VK=73 | Key=i | SuggestedBinding=default|1_73=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:43 | Layer=default | Keyboard=1 | VK=67 | Key=c | SuggestedBinding=default|1_67=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:44 | Layer=default | Keyboard=1 | VK=74 | Key=j | SuggestedBinding=default|1_74=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:46 | Layer=default | Keyboard=1 | VK=67 | Key=c | SuggestedBinding=default|1_67=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:47 | Layer=default | Keyboard=1 | VK=74 | Key=j | SuggestedBinding=default|1_74=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:47 | Layer=default | Keyboard=1 | VK=67 | Key=c | SuggestedBinding=default|1_67=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:49 | Layer=default | Keyboard=1 | VK=54 | Key=6 | SuggestedBinding=default|1_54=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:50 | Layer=default | Keyboard=1 | VK=53 | Key=5 | SuggestedBinding=default|1_53=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:51 | Layer=default | Keyboard=1 | VK=54 | Key=6 | SuggestedBinding=default|1_54=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:51 | Layer=default | Keyboard=1 | VK=65 | Key=a | SuggestedBinding=default|1_65=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:51 | Layer=default | Keyboard=1 | VK=48 | Key=0 | SuggestedBinding=default|1_48=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 15:48:51 | Layer=default | Keyboard=1 | VK=57 | Key=9 | SuggestedBinding=default|1_57=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 18:34:06 | CaptureMode | Layer=default | Keyboard=1 | VK=71 | Key=g | AddedBinding=default|1_71=run|E:\Unity\6000.2.0f1\Editor\Unity.exe | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:33:30 | Layer=default | Keyboard=1 | VK=67 | Key=c | SuggestedBinding=default|1_67=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:33:33 | Layer=default | Keyboard=1 | VK=68 | Key=d | SuggestedBinding=default|1_68=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:33:35 | Layer=default | Keyboard=1 | VK=73 | Key=i | SuggestedBinding=default|1_73=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:33:38 | Layer=default | Keyboard=1 | VK=73 | Key=i | SuggestedBinding=default|1_73=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:33:51 | Layer=default | Keyboard=1 | VK=68 | Key=d | SuggestedBinding=default|1_68=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:33:55 | Layer=default | Keyboard=1 | VK=68 | Key=d | SuggestedBinding=default|1_68=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:33:58 | Layer=default | Keyboard=1 | VK=68 | Key=d | SuggestedBinding=default|1_68=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:34:01 | Layer=default | Keyboard=1 | VK=68 | Key=d | SuggestedBinding=default|1_68=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:35:57 | CaptureMode | Layer=default | Keyboard=1 | VK=72 | Key=h | AddedBinding=default|1_72=run|rider64.exe | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:36:24 | CaptureMode | Layer=default | Keyboard=1 | VK=72 | Key=h | AddedBinding=default|1_72=run|E:\JetBrains\JetBrains Rider 2024.1\bin\rider64.exe | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:40:18 | Layer=default | Keyboard=1 | VK=73 | Key=i | SuggestedBinding=default|1_73=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:40:18 | Layer=default | Keyboard=1 | VK=73 | Key=i | SuggestedBinding=default|1_73=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:42:15 | Layer=default | Keyboard=1 | VK=74 | Key=j | SuggestedBinding=default|1_74=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:42:18 | Layer=default | Keyboard=1 | VK=73 | Key=i | SuggestedBinding=default|1_73=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:43:30 | Layer=default | Keyboard=1 | VK=54 | Key=6 | SuggestedBinding=default|1_54=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:43:34 | Layer=default | Keyboard=1 | VK=54 | Key=6 | SuggestedBinding=default|1_54=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:43:37 | Layer=default | Keyboard=1 | VK=54 | Key=6 | SuggestedBinding=default|1_54=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:43:38 | Layer=default | Keyboard=1 | VK=53 | Key=5 | SuggestedBinding=default|1_53=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:43:39 | Layer=default | Keyboard=1 | VK=54 | Key=6 | SuggestedBinding=default|1_54=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 19:44:18 | Layer=default | Keyboard=1 | VK=57 | Key=9 | SuggestedBinding=default|1_57=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 23:34:57 | Layer=default | Keyboard=1 | VK=74 | Key=j | SuggestedBinding=default|1_74=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 23:34:59 | Layer=default | Keyboard=1 | VK=74 | Key=j | SuggestedBinding=default|1_74=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-10 23:35:00 | Layer=default | Keyboard=1 | VK=74 | Key=j | SuggestedBinding=default|1_74=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-11 06:12:17 | Layer=default | Keyboard=1 | VK=53 | Key=5 | SuggestedBinding=default|1_53=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-11 06:12:22 | Layer=default | Keyboard=1 | VK=54 | Key=6 | SuggestedBinding=default|1_54=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-11 06:12:23 | Layer=default | Keyboard=1 | VK=54 | Key=6 | SuggestedBinding=default|1_54=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-11 06:12:23 | Layer=default | Keyboard=1 | VK=53 | Key=5 | SuggestedBinding=default|1_53=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-11 06:12:24 | Layer=default | Keyboard=1 | VK=54 | Key=6 | SuggestedBinding=default|1_54=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-11 06:12:25 | Layer=default | Keyboard=1 | VK=48 | Key=0 | SuggestedBinding=default|1_48=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-11 06:12:27 | Layer=default | Keyboard=1 | VK=57 | Key=9 | SuggestedBinding=default|1_57=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-11 06:12:28 | Layer=default | Keyboard=1 | VK=70 | Key=f | SuggestedBinding=default|1_70=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-11 06:12:29 | Layer=default | Keyboard=1 | VK=69 | Key=e | SuggestedBinding=default|1_69=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
+2026-03-11 06:12:33 | Layer=default | Keyboard=1 | VK=73 | Key=i | SuggestedBinding=default|1_73=msg| | WasDown=0 | Extended=0 | LCtrl=0 | RCtrl=0 | LAlt=0 | RAlt=0 | Shift=0
