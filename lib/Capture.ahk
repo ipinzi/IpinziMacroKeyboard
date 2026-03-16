@@ -188,6 +188,13 @@ RunBindingWizard(bindingKey, keyName) {
                 return { Success: false }
             params.Push(d.Value)
 
+        case "14":
+            actionType := "delay"
+            d := InputBox("Enter delay duration in milliseconds (e.g. 250).", "Delay Action", "w500 h160")
+            if (d.Result != "OK")
+                return { Success: false }
+            params.Push(Trim(d.Value))
+
         default:
             return { Success: false }
     }
@@ -224,6 +231,7 @@ ShowBindingTypePicker(bindingKey, keyName) {
       , "11 = OBS streaming"
       , "12 = OBS mute / unmute input"
       , "13 = OBS hotkey"
+      , "14 = Delay (milliseconds)"
     ]
 
     list := picker.AddListBox("xm w520 r13", items)

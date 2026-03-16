@@ -72,6 +72,13 @@ SplitEscaped(text, delimiter := "|") {
 
         if (ch = "\\") {
             if (i < StrLen(text)) {
+                ; Support escaping multi-char delimiters (e.g. ";;") as well as single-char ones.
+                if (dLen > 1 && SubStr(text, i + 1, dLen) = delimiter) {
+                    current .= delimiter
+                    i += 1 + dLen
+                    continue
+                }
+
                 nextCh := SubStr(text, i + 1, 1)
                 if (nextCh = delimiter || nextCh = "\\") {
                     current .= nextCh

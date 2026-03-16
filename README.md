@@ -96,6 +96,20 @@ Example:
 
     default|2_112=run|notepad.exe
 
+## 🧩 Multiple action in a single key bind
+
+The binding system now splits a binding string on unescaped ;; and executes each segment sequentially.
+Example: default|2_112=run|notepad.exe;;send|^c
+
+Becomes:
+run|notepad.exe
+send|^c
+
+## Escaping ;; or |
+If you need a literal ;; or | inside a parameter, escape it like this:
+
+\;; becomes a literal ;; (not a separator)
+
 ------------------------------------------------------------------------
 
 ## 🎮 Supported Actions
@@ -155,6 +169,20 @@ Supported:
 Example:
 
     default|2_115=media|playpause
+
+------------------------------------------------------------------------
+
+## Delay / Pause
+
+    delay|milliseconds
+
+Example (pause for 250ms):
+
+    default|2_116=delay|250
+
+This is mostly used for chaining actions in a multi-action binding:
+
+    default|2_117=run|notepad.exe;;delay|250;;send|^c
 
 ------------------------------------------------------------------------
 

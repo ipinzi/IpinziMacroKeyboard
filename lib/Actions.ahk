@@ -17,6 +17,18 @@ ParseBinding(binding) {
 ExecuteBinding(binding, keyboardNumber, vk) {
     global CurrentLayer, ConfigFile
 
+    ; Allow chaining multiple actions in one binding (separated by ";;").
+    segments := SplitEscaped(binding, ";;")
+    if (segments.Length > 1) {
+        for _, seg in segments {
+            seg := Trim(seg)
+            if (seg = "")
+                continue
+            ExecuteBinding(seg, keyboardNumber, vk)
+        }
+        return
+    }
+
     parsed := ParseBinding(binding)
     actionType := parsed.ActionType
     params := parsed.Params
@@ -90,6 +102,14 @@ ExecuteBinding(binding, keyboardNumber, vk) {
 
         case "obs_mute":
             HandleOBSMute(params)
+
+        case "delay":
+            ms := (params.Length ? params[1] : "")
+            if (ms = "" || !RegExMatch(ms, "^\d+$")) {
+                MsgBox "Invalid delay value (milliseconds):`n" ms
+                return
+            }
+            Sleep ms
 
         default:
             MsgBox "Unknown action type:`n" actionType "`n`nBinding:`n" binding
