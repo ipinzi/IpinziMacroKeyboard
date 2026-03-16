@@ -104,7 +104,7 @@ Example: default|2_112=run|notepad.exe;;send|^c
 Becomes:
 run|notepad.exe
 send|^c
-
+You can create multi-action bindings easily using the binding wizard - it will prompt you to add more actions after each one!
 ## Escaping ;; or |
 If you need a literal ;; or | inside a parameter, escape it like this:
 
@@ -185,7 +185,23 @@ This is mostly used for chaining actions in a multi-action binding:
     default|2_117=run|notepad.exe;;delay|250;;send|^c
 
 ------------------------------------------------------------------------
+## Type Message
 
+    typemsg|message|submit
+
+Where `submit` is `true` to press Enter after typing, or `false` (default) to just type the message.
+
+Example (type message without Enter):
+
+    default|2_118=typemsg|Hello World
+
+Example (type message and submit):
+
+    default|2_119=typemsg|Hello World|true
+
+Perfect for Twitch chat, command line, or any text input.
+
+------------------------------------------------------------------------
 # 🎬 OBS Actions
 
 ## Switch Scene

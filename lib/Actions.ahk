@@ -110,7 +110,19 @@ ExecuteBinding(binding, keyboardNumber, vk) {
                 return
             }
             Sleep ms
-
+        case "typemsg":
+            text := params.Length ? params[1] : ""
+            submit := params.Length > 1 ? StrLower(params[2]) : "false"
+            if (submit == "true" || submit == "1" || submit == "yes")
+                Send text "{Enter}"
+            else
+                Send text
+        case "focus":
+            windowTitle := params.Length ? params[1] : ""
+            if (windowTitle != "") {
+                WinActivate windowTitle
+                WinWaitActive windowTitle, , 2
+            }
         default:
             MsgBox "Unknown action type:`n" actionType "`n`nBinding:`n" binding
     }
