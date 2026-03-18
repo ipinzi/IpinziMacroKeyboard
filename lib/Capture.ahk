@@ -216,6 +216,56 @@ RunBindingWizard(bindingKey, keyName) {
                     return { Success: false }
                 params.Push(d.Value)
 
+            case "17":
+                actionType := "plugin"
+                d1 := InputBox("Enter plugin filename (e.g., myplugin.ahk).", "Plugin File", "w500 h160")
+                if (d1.Result != "OK")
+                    return { Success: false }
+                params.Push(d1.Value)
+
+                d2 := InputBox("Enter plugin action (e.g., msg, send).", "Plugin Action", "w500 h160")
+                if (d2.Result != "OK")
+                    return { Success: false }
+                params.Push(d2.Value)
+
+                ; Optional: additional parameters
+                moreParams := MsgBox("Add additional parameters to the plugin call?", "Plugin Parameters", "YesNo")
+                if (moreParams = "Yes") {
+                    loop {
+                        dparam := InputBox("Enter additional parameter (leave empty to skip):", "Plugin Parameter", "w500 h160")
+                        if (dparam.Result != "OK" || dparam.Value = "")
+                            break
+                        params.Push(dparam.Value)
+                    }
+                }
+
+            case "18":
+                actionType := "customaction"
+                d := InputBox(
+                    "Enter custom action name (will call Action_<name> function).`n`n"
+                  . "Example: sampleversion`n"
+                  . "Must be defined in a compile-time plugin.",
+                    "Custom Action Name",
+                    "w560 h220"
+                )
+                if (d.Result != "OK")
+                    return { Success: false }
+                actionName := StrLower(Trim(d.Value))
+                if (actionName = "")
+                    return { Success: false }
+                actionType := actionName
+
+                ; Optional: additional parameters
+                moreParams := MsgBox("Add parameters to this custom action?", "Action Parameters", "YesNo")
+                if (moreParams = "Yes") {
+                    loop {
+                        dparam := InputBox("Enter parameter (leave empty to finish):", "Action Parameter", "w500 h160")
+                        if (dparam.Result != "OK" || dparam.Value = "")
+                            break
+                        params.Push(dparam.Value)
+                    }
+                }
+
             default:
                 return { Success: false }
         }
@@ -276,9 +326,11 @@ ShowBindingTypePicker(bindingKey, keyName, step := 1) {
       , "14 = Delay (milliseconds)"
       , "15 = Type message (with optional Enter)"
       , "16 = Focus window"
+      , "17 = Plugin (runtime external script)"
+      , "18 = Custom action (compile-time)"
     ]
 
-    list := picker.AddListBox("xm w520 r16", items)
+    list := picker.AddListBox("xm w520 r18", items)
     list.Choose(1)
 
     okBtn := picker.AddButton("xm y+12 w120 Default", "OK")

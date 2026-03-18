@@ -201,8 +201,63 @@ Example (type message and submit):
 
 Perfect for Twitch chat, command line, or any text input.
 
-------------------------------------------------------------------------
-# 🎬 OBS Actions
+## Other Actions
+
+These actions are also supported and can be used in bindings.
+
+### Layer Switch
+
+    layer|layerName
+
+Example:
+
+    default|2_120=layer|media
+
+### Open Folder
+
+    folder|path1|path2|...
+
+Example:
+
+    default|2_121=folder|C:\Projects|D:\Downloads
+
+### Open Website
+
+    website|url1|url2|...
+
+Example:
+
+    default|2_122=website|https://google.com|https://github.com
+
+### Edit Bindings
+
+    editbindings|
+
+Opens `bindings.ini` in Notepad.
+
+### Capture Mode
+
+    capture|
+
+Enables capture mode, which allows you to press a key and have the binding wizard generate a binding line.
+
+### Focus Window
+
+    focus|window title
+
+Brings the first window matching the title into focus.
+
+### Plugin (Runtime)
+
+    plugin|plugin.ahk|action|param1|param2
+
+Runs an external script in `plugins\` as a separate process.
+
+### Custom/Compile-time Actions
+
+You can also define `Action_<name>` functions in a compile-time plugin and call them directly by using `name|params`.
+
+# OBS Actions
 
 ## Switch Scene
 
@@ -241,6 +296,101 @@ Example:
 Example:
 
     default|2_115=obs_mute|Mic/Aux|toggle
+
+------------------------------------------------------------------------
+
+# 🔌 Plugins (Extensions)
+
+The program supports extensions via external AutoHotkey scripts that are executed as separate processes.
+
+## How to Create a Plugin
+
+1. Create a new `.ahk` file in the `plugins/` folder (e.g., `myplugin.ahk`).
+2. The script will be run with command-line arguments passed from the binding.
+3. Use `A_Args` to access the parameters.
+
+## Example Plugin
+
+```autohotkey
+; myplugin.ahk
+#Requires AutoHotkey v2.0
+
+; Parameters are in A_Args array
+action := A_Args[1]
+
+switch action {
+    case "msg":
+        MsgBox A_Args[2]
+    case "send":
+        Send A_Args[2]
+    default:
+        MsgBox "Unknown action"
+}
+```
+
+## Using Plugins in Bindings
+
+In `bindings.ini`, use the `plugin` action:
+
+```
+default|2_120=plugin|myplugin.ahk|msg|Hello World
+default|2_121=plugin|sample.ahk|send|^c
+```
+
+This will run `plugins\myplugin.ahk` with arguments `param1 param2`.
+
+## Notes
+
+- Plugins run as separate processes, so they don't share memory with the main program.
+- Plugins have access to all AHK features and can interact with the system.
+- Place plugin files in the `plugins/` folder alongside the EXE and data folder.
+- For developers: Custom actions can still be added by modifying source and recompiling (see below).
+
+## Advanced: Compile-Time Plugins (For Developers)
+
+If you have access to the source code, you can add custom actions that integrate directly:
+
+1. Create plugin `.ahk` files defining `Action_<name>` functions.
+2. Add `#Include plugins\myplugin.ahk` in `main.ahk`.
+3. Recompile to EXE.
+4. Use `myaction|params` in bindings.
+
+## Building / Compiling (Requires AutoHotkey v2)
+
+The project includes a `build.ps1` script to:
+
+- Automatically include any compile-time plugins in `plugins/`
+- Prompt for a version and create a `builds/<version>/` folder
+- Copy `bindings.ini` and the `data/` folder into the build
+- Compile `main.ahk` into an EXE named **"Ipinzi Macro Keyboard.exe"**
+
+### Requirements
+
+- AutoHotkey **v2** must be installed (so `ahk2exe.exe` is available)
+- PowerShell (Windows) to run `build.ps1`
+
+### Building
+
+Run the build script from the project root using the batch wrapper (recommended):
+
+```cmd
+build.cmd
+```
+
+This will prompt you for a version and create a `builds\<version>` folder.
+
+To skip the final pause (for CI/automation):
+
+```cmd
+build.cmd /nopause
+```
+
+The build output will appear in:
+
+```
+builds\<version>\Ipinzi Macro Keyboard.exe
+```
+
 
 ------------------------------------------------------------------------
 

@@ -123,8 +123,29 @@ ExecuteBinding(binding, keyboardNumber, vk) {
                 WinActivate windowTitle
                 WinWaitActive windowTitle, , 2
             }
+
+        case "plugin":
+            if (params.Length >= 1) {
+                pluginPath := A_ScriptDir "\plugins\" params[1]
+                if (FileExist(pluginPath)) {
+                    args := ""
+                    Loop params.Length - 1
+                        args .= " " params[A_Index + 1]
+                    try Run pluginPath args
+                    catch Error as err
+                        MsgBox "Failed to run plugin: " pluginPath "`n" err.Message
+                } else {
+                    MsgBox "Plugin not found: " pluginPath
+                }
+            }
+
         default:
-            MsgBox "Unknown action type:`n" actionType "`n`nBinding:`n" binding
+            funcName := "Action_" actionType
+            try {
+                %funcName%(params, keyboardNumber, vk)
+            } catch {
+                MsgBox "Unknown action type:`n" actionType "`n`nBinding:`n" binding
+            }
     }
 }
 
