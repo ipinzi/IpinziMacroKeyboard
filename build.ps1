@@ -7,7 +7,8 @@ param(
     [string]$PluginsDir = "$ScriptDir\plugins",
     [switch]$NoCompile = $false,
     [string]$Version = "",
-    [string]$OutputExe = ""
+    [string]$OutputExe = "",
+    [string]$PluginIgnoreFile = "$ScriptDir\build.plugins.ignore"
 )
 
 Write-Host "Building IpinziMacroKeyboard..." -ForegroundColor Cyan
@@ -58,15 +59,42 @@ if ([string]::IsNullOrWhiteSpace($OutputExe)) {
 Write-Host "Build output folder: $BuildDir" -ForegroundColor Cyan
 Write-Host "Output EXE: $OutputExe" -ForegroundColor Cyan
 
+# Load optional local plugin ignore list.
+$ignoredPlugins = @{}
+if (Test-Path $PluginIgnoreFile) {
+    Write-Host "Using plugin ignore file: $PluginIgnoreFile" -ForegroundColor Cyan
+
+    foreach ($rawLine in Get-Content -Path $PluginIgnoreFile) {
+        $line = $rawLine.Trim()
+        if ([string]::IsNullOrWhiteSpace($line)) {
+            continue
+        }
+
+        if ($line.StartsWith("#") -or $line.StartsWith(";")) {
+            continue
+        }
+
+        $ignoredPlugins[$line.ToLowerInvariant()] = $true
+    }
+}
+
 # Find all compile-time plugin files (those with Action_ functions)
 $pluginFiles = @()
 $ahkFiles = Get-ChildItem -Path $PluginsDir -Filter "*.ahk" -ErrorAction SilentlyContinue
 
 foreach ($file in $ahkFiles) {
     $content = Get-Content -Path $file.FullName -Raw
+    $relativePath = "plugins\$($file.Name)"
+    $ignoredByName = $ignoredPlugins.ContainsKey($file.Name.ToLowerInvariant())
+    $ignoredByPath = $ignoredPlugins.ContainsKey($relativePath.ToLowerInvariant())
     
     # Check if file contains Action_ functions (compile-time plugin indicator)
     if ($content -match 'Action_\w+\s*\(') {
+        if ($ignoredByName -or $ignoredByPath) {
+            Write-Host "  [-] Ignored compile-time plugin: $($file.Name)" -ForegroundColor Yellow
+            continue
+        }
+
         $pluginFiles += $file.Name
         Write-Host "  [+] Found compile-time plugin: $($file.Name)" -ForegroundColor Green
     } else {

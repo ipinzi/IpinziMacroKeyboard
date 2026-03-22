@@ -1,2 +1,5 @@
 /build/
 /builds/
+/plugins/streamToggle.ahk
+/build.plugins.ignore
+/unmapped_keys.log

@@ -1,4 +1,4 @@
-; Sample plugin script for external execution
+; Sample plugin script for runtime external execution (not compiled into the EXE)
 ; This script is run as a separate process when the "plugin" action is used
 ; Parameters are passed via command line args in A_Args
 
